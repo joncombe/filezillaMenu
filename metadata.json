@@ -1,0 +1,14 @@
+{
+    "shell-version": [
+	"3.4",
+	"3.6",
+	"3.8",
+	"3.12"
+	],
+    "uuid": "filezillaMenu",
+    "name": "filezillaMenu",
+    "original-author": "Jon Combe",
+    "url": "http://joncom.be",
+    "description": "filezillaMenu",
+    "version": 3
+}
