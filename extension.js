@@ -53,9 +53,9 @@ const FilezillaMenu = new Lang.Class({
             let lines = content.toString().split('\n');
             for (let i=0; i<lines.length; i++) {
                 if (lines[i].includes('<Name>')) {
-                    id = lines[i].replace('<Name>', '').replace('</Name>', '').trim();
+                    id = lines[i].replace('<Name>', '').replace('</Name>', '').trim().replace('"', '\"');
                     this.menu.addAction(id, function(event) {
-                        Util.spawn(['filezilla', '-c', '0/' + id]);
+                        Util.spawn(['filezilla', '-c', '0/"' + id + '"']);
                     });
                 }
             }
